@@ -1,0 +1,21 @@
+¿Dónde y cómo se arranca cada cosa?
+Paso 1: Levantar MariaDB en Laragon, 
+dale clic al botón "Iniciar todo"
+
+Paso 2: Probar el Backend (PHP)
+cd backend/master-team-api
+php -S localhost:8000 -t public
+
+--------
+
+Paso 3: Levantar el Frontend (React + Vite)
+cd frontend/master-team-client
+npm run dev
+
+
+-------
+usuarios pass 123456
+-------
+INSERT INTO usuarios (rol, nombre, email, password_hash, activo) VALUES
+('ADMIN', 'Administrador Principal', 'admin@masterteam.com', '$2y$10$eA09y2W0RsmZ6b.t1qF8A.YmX58oG3UeZvZKxOsqh78lXqgq0P0qG', 1),
+('ENTRENADOR', 'Profesor Carlos', 'entrenador@masterteam.com', '$2y$10$eA09y2W0RsmZ6b.t1qF8A.YmX58oG3UeZvZKxOsqh78lXqgq0P0qG', 1);
